@@ -1,0 +1,184 @@
+﻿[
+  {
+    "id": "hitide",
+    "title": "HiTide Capital",
+    "year": 2023,
+    "layout": "grid",
+    "categories": ["IDENTITY", "WEB"],
+    "description": "HiTide provides fast, flexible financing for small businesses. I developed a cohesive visual identity across its logo, brand system, promotional materials, and advertising campaigns, making a complex range of financial products feel clear and accessible.",
+    "link": "https://hitidecapital.com/",
+    "team": "Mia Hopkins, Senior Art Director<br>Jackson Greaves, Copywriter<br>Emily Roach, Motion Designer<br>Tim Abbasov, Web Design",
+    "images": [
+      "images/hitide/bilboard_01.png",
+      "images/hitide/hiTide_businessCard_01.png",
+      "images/hitide/hiTide_phoneAd.png"
+    ]
+  },
+  {
+    "id": "chalet",
+    "title": "Chalet Home & Garden",
+    "year": 2024,
+    "categories": ["IDENTITY", "DESIGN"],
+    "description": "Chalet is a staple in Chicago's North Shore for home and garden needs since 1917. As it heads into the future, Chalet aimed for a revitalized brand concept, slogan, and visual style. ",
+    "link": "#",
+    "team": "Kyle Reading,Group Creative Director<br>Rose Truesdale, Associate Creative Director<br>Mia Hopkins, Senior Art Director<br>Anatoly Sazonov, Illustrator<br>Emily Resch, Motion Designer",
+    "layout":"grid",
+    "images": [
+      "images/chalet/chalet1.png",
+      "images/chalet/chalet2.png",
+      "images/chalet/chalet5.png",
+      "images/chalet/chalet6.png",
+      "images/chalet/chalet8.png",
+      "images/chalet/chalet10.png"
+    ]
+  },
+  {
+    "id": "project3",
+    "title": "Griffith Foods",
+    "year": 2024,
+    "categories": ["DESIGN", "ART DIRECTION"],
+    "description": "Designs created for an employee engagement campaign at Griffith Foods, aimed at aligning employees with the company’s mission to achieve carbon neutrality and a positive environmental impact by 2030.",
+    "team": "Jackson Greaves, Copywriter",
+    "layout": "grid",
+    "images": [
+      "images/griffith/gf00000.png",
+      "images/griffith/gf00002.png",
+      "images/griffith/gf00006.png",
+      "images/griffith/gf00003.png",
+      "images/griffith/gf00001.png"
+    ]
+  },
+  {
+    "id": "project4",
+    "title": "Datalogics",
+    "archived": false,
+    "year": 2019,
+    "categories": ["DESIGN","IDENTITY"],
+    "description": "A new graphic identity for Datalogics, an Adobe portfolio company and leader in document management. The redesign aimed to reflect the company’s 50 years of history while integrating its contemporary consciousness and future goals.",
+    "team": "Thomas Bunch—Web Development,<br>Lindsey Schroeder—Content Strategy & Copy-Writing,<br>Jocelyn Nava—Social Media",
+    "images": [
+      "images/datalogics/DL_mockups_01.png",
+      "images/datalogics/DL_mockups_02.png",
+      "images/datalogics/DL_mockups_03.png",
+      "images/datalogics/DL_mockups_04.png",
+      "images/datalogics/formsHero_v01.png"
+    ]
+  },
+  {
+    "id": "project5",
+    "title": "Workiva",
+    "year": 2023,
+    "categories": ["DESIGN"],
+    "description": "Merchandise concept for Workiva, translating the global brand into a cohesive range of apparel, accessories, and event items. The system balanced recognisable brand elements with a more expressive visual language suited to physical products.",
+    "team": "Various",
+    "layout": "grid",
+    "images": [
+      "images/workiva/wk00000.png",
+      "images/workiva/wk00001.png",
+      "images/workiva/wk00002.png",
+      "images/workiva/wk00003.png",
+      "images/workiva/wk00004.png"
+    ]
+  },
+  {
+    "id": "project6",
+    "title": "No Other Day",
+    "year": "2026",
+    "displayYear": "2021–PRESENT",
+    "categories": ["IDENTITY", "SOUND", "WEB"],
+    "description": "No Other Day is a music and visual art collective operating between Chicago and Porto. Exploring the dissolution of individual authorship, the project spans original music releases, DJ sets, live performances, radio broadcasts, and visual work.",
+    "link": "https://nootherday.net",
+    "layout": "grid",
+    "images": [
+      "youtube:S9rGXpMox4c",
+      "images/nod/NOD_CD.jpg",
+      "images/nod/nod00000.png",
+      "images/nod/nod00006.png",
+      "images/nod/nod00007.png",
+      "images/nod/nod00010.jpg",
+      "images/nod/nod00008.jpg",
+      "images/nod/output.gif",
+      "images/nod/cdCase_169.png",
+      "images/nod/nod00013.jpg",
+      "images/nod/nod00012.png",
+      "youtube:LnGXMMNIlvU"
+    ]
+  },
+    {
+      "id": "project7",
+      "title": "Good Mood Tattoo",
+      "year": "2024",
+      "categories": ["IDENTITY"],
+      "description": "With a well-established solo studio practice, tattoo artist Sophia Bruce sought to create an identity that honored her existing aesthetic while remaining flexible enough to serve as an umbrella for other artists joining her new tattoo shop on Chicago’s south side.",
+      "link": "https://www.instagram.com/goodmoodtattoo/",
+      "layout": "grid",
+      "images": [
+        "images/goodmood/businessCard-Front-B@4x.png",
+        "images/goodmood/punchCard-A@4x.png",
+        "images/goodmood/BusinessCard-reverse-v02@4x.png",
+        "images/goodmood/good_printed.png",
+        "images/goodmood/goodMoodDoor.jpg",
+        "images/goodmood/good.png"
+      ]
+    },
+    {
+      "id": "project8",
+      "title": "Illuminatus!",
+      "year": "2024",
+      "displayYear": "2019–2024",
+      "categories": ["MOTION"],
+      "description": "Background design and animations for an adaptation of the Illuminatus! trilogy by Robert Shea & Robert Anton Wilson, featuring the voices of Alex Cox, Jon Glaser, and Gregg Turkington. <br><br> The scenes were lit, textured, and rendered in Cinema 4D, with additional graphics animated in After Effects.<br><br> The short film premiered at the FilmQuest festival in Provo, Utah (USA) in October 2024. ",
+      "link": "https://www.imdb.com/title/tt34298426/",
+      "layout": "grid",
+      "images": ["vimeo:1085513661?h=0a0cd1a5ec"]
+    },
+    
+    {
+      "id": "project9",
+      "title": "Dominic Voz Live Visuals",
+      "year": 2023,
+      "categories": ["MOTION"],
+      "description": "Created 45 minutes of live visuals for Dominic Voz’s 2022 album debut at Cafe Mustache, followed by a 22-minute performance at Grace Episcopal Church as part of the Drone Rodeo event series. The visuals responded to Voz’s glitchy, distorted sounds and serene melodies through mixed-media techniques including stop-motion and live video recursion.",
+      "layout": "grid",
+      "images": ["youtube:cFOJzJ-NOJY"]
+    },
+
+    {
+      "id": "project10",
+      "title": "Those Shoes",
+      "year": 2018,
+      "categories": ["MOTION"],
+      "description": "Those Shoes is an animated short commissioned by the now-defunct media company Super Deluxe, directed by Devin Flynn and Amy Lockhart. The film follows a detective searching for the owner of a shoe left at a murder scene. My role focused on video post-production and rotoscoping.",
+      "layout": "grid",
+      "link":"https://amylockhart.ca/animations/those-shoes/",
+      "images": ["youtube:l9XNC8vFen8"]
+    },
+
+    {
+      "id": "project11",
+      "title": "Poetics of Computational Design",
+      "year": 2026,
+      "categories": ["IDENTITY","WEB"],
+      "description": "Website design for Poetics of Computational Design 2026, an event exploring the cultural, critical, and poetic dimensions of computation in art and design. The site reimagines conventional web design through principles drawn from blackout poetry, introducing friction and alternative modes of navigation and visualization.",
+      "link": "https://pcd.fba.up.pt/2026/",
+      "images": [
+      "images/pcd-26/pcd-01.png",
+      "images/pcd-26/pcd-02.gif"
+      ]
+    },
+
+    {
+      "id": "project12",
+      "title": "Concept Series",
+      "year": 2024,
+      "categories": ["DESIGN"],
+      "description": "A series of posters and print materials that visualize poems, essays, and theoretical readings—serving as a sandbox for alternative typographic treatments and experimental layouts.",
+      "images": [
+        "images/conceptSeries/workIsTime_02.png",
+        "images/conceptSeries/twigs-01.png",
+        "images/conceptSeries/fov-02.png",
+        "images/conceptSeries/uneedto-01.png"
+      ]
+    }
+
+]
