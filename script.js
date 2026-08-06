@@ -1,24 +1,27 @@
-﻿// 1. Where we store the data after fetching it from JSON
+// 1. Where we store the data after fetching it from JSON
 let projectsData = [];
 let currentFilteredProjects = [];
 
-// 2. Categories 
+// 2. Categories (WRITING excluded — it has its own nav view)
 const allCategories = [
   "DESIGN",
   "IDENTITY",
   "MOTION",
   "WEB",
-  "WRITING",
   "SOUND",
 ];
 let activeFilters = []; // Keeps track of what is currently clicked
 let showArchive = false; // Whether the ARCHIVE filter is active
+let currentView = "projects"; // 'projects' or 'writing'
 
 // 3. Grab HTML elements to put stuff into
 const filterContainer = document.getElementById("filter-container");
 const projectListContainer = document.getElementById("project-list");
 const projectImagesContainer = document.getElementById("project-images");
 const projectInfoContainer = document.getElementById("project-info");
+const portfolioContainer = document.getElementById("portfolio-container");
+const writingContainer = document.getElementById("writing-container");
+const aboutContainer = document.getElementById("about-container");
 
 // ==========================================
 // CORE FUNCTIONS
@@ -30,11 +33,58 @@ async function init() {
   const response = await fetch("projects.json");
   projectsData = await response.json();
 
+  // Set up nav view switching (PROJECTS / WRITING)
+  setupNavLinks();
+
   // Build the filter buttons on the screen
   renderFilters();
 
   // Run the filter check (shows all projects by default)
   applyFilters();
+}
+
+// A2. Set up PROJECTS / WRITING nav switching
+function setupNavLinks() {
+  const navLinks = document.querySelectorAll(".main-nav a[data-view]");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const view = link.dataset.view;
+      if (view === currentView) return; // Already on this view
+
+      currentView = view;
+
+      // Update active state on nav links
+      document.querySelectorAll(".main-nav a").forEach((a) => a.classList.remove("active"));
+      link.classList.add("active");
+
+      // Hide all views
+      portfolioContainer.style.display = "none";
+      filterContainer.style.display = "none";
+      writingContainer.style.display = "none";
+      aboutContainer.style.display = "none";
+
+      if (currentView === "writing") {
+        writingContainer.style.display = "";
+        renderWritingList();
+      } else if (currentView === "about") {
+        aboutContainer.style.display = "";
+      } else {
+        // Projects view
+        portfolioContainer.style.display = "";
+        filterContainer.style.display = "";
+
+        // Reset filters
+        activeFilters = [];
+        showArchive = false;
+        document.querySelectorAll(".filter-btn").forEach((btn) => btn.classList.remove("active"));
+        document.getElementById("filter-all-btn").classList.add("active");
+        applyFilters();
+      }
+
+      window.scrollTo(0, 0);
+    });
+  });
 }
 
 // B. Create Filter Buttons
@@ -130,15 +180,21 @@ function toggleFilter(category, btnElement) {
   applyFilters();
 }
 
-// D. Decide Which Projects to Show
+// D. Decide Which Projects to Show (excludes WRITING-only projects)
 function applyFilters() {
-  // D1. First, separate projects by archive status
+  // D1. First, separate projects by archive status and exclude writing-only projects
   let pool;
   if (showArchive) {
     pool = projectsData.filter((project) => project.archived === true);
   } else {
     pool = projectsData.filter((project) => !project.archived);
   }
+
+  // Exclude projects that are ONLY in the WRITING category
+  pool = pool.filter((project) => {
+    const isWritingOnly = project.categories.length === 1 && project.categories[0] === "WRITING";
+    return !isWritingOnly;
+  });
 
   // D2. Then apply category filters on top
   if (activeFilters.length === 0) {
@@ -244,6 +300,61 @@ function loadProject(index) {
         ${linkHTML}
         ${teamHTML}
     `;
+}
+
+// G. Render the Writing List View
+function renderWritingList() {
+  const writingMain = document.getElementById("writing-main");
+
+  // Get all writing projects (those with WRITING in their categories)
+  const writingProjects = projectsData
+    .filter((project) => project.categories.includes("WRITING"))
+    .sort((a, b) => b.year - a.year);
+
+  if (writingProjects.length === 0) {
+    writingMain.innerHTML = `<p class="writing-empty">No writing projects yet.</p>`;
+    return;
+  }
+
+  // Group by writingType, in this display order
+  const sectionOrder = ["Article", "Conference Paper", "Blog Post"];
+  const grouped = {};
+
+  writingProjects.forEach((project) => {
+    const type = project.writingType || "Other";
+    if (!grouped[type]) grouped[type] = [];
+    grouped[type].push(project);
+  });
+
+  // Build HTML section by section
+  let html = "";
+  sectionOrder.forEach((type) => {
+    if (!grouped[type] || grouped[type].length === 0) return;
+
+    const heading = type + "s";
+    html += `<h3 class="writing-section-heading">${heading}</h3>`;
+
+    html += grouped[type]
+      .map((project) => {
+        const linkHTML = project.link
+          ? `<a href="${project.link}" target="_blank" class="writing-link">Read &#8599;</a>`
+          : "";
+
+        return `
+          <article class="writing-entry">
+            <div class="writing-entry-header">
+              <h2 class="writing-entry-title">${project.title}</h2>
+              <span class="writing-entry-year">${project.displayYear || project.year}</span>
+            </div>
+            <p class="writing-entry-desc">${project.description}</p>
+            ${linkHTML}
+          </article>
+        `;
+      })
+      .join("");
+  });
+
+  writingMain.innerHTML = html;
 }
 
 // Boot up the site when the file loads

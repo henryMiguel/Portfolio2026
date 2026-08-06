@@ -10,6 +10,16 @@
 }
 
 @font-face {
+    font-family: 'NeueMontreal-Bold';
+    src: url('fonts/PPNeueMontreal-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'NeueMontreal-Medium';
+    src: url('fonts/PPNeueMontreal-Medium.otf') format('opentype');
+}
+
+@font-face {
     font-family: 'protrakt-mediumExp-4';
     src: url('fonts/FontsFree-Net-ProtraktGX.ttf') format('truetype');
     font-weight: 100 1000;
@@ -50,7 +60,7 @@ a {
     display: grid;
     grid-template-columns: 250px 1fr 300px; 
     align-items: center;
-    padding: 1em 0 0 0;
+    padding: 2em 0 0.5em 0;
     /* position: sticky;
     top: 0;
     z-index: 100;
@@ -87,20 +97,25 @@ a {
 .main-nav {
     font-family: var(--font-display-alt);
     display: flex;
-    gap: 2em;
-    padding-left: 1em;
+    gap: 1em;
     align-items: flex-start;
-    vertical-align: middle;
 }
 
 .main-nav a {
     font-weight: 500;
-    font-size: 0.85rem;
+    font-size: 0.75em;
     text-transform: uppercase;
     color: var(--text-color);
+    padding: 0.5em;
 }
+
+.main-nav a:hover {
+    color: var(--text-color);
+    background-color: var(--accent-color);
+}
+
 .main-nav a.active { 
-    border-bottom: 2px solid var(--text-color); 
+    border-bottom: 1px solid var(--text-color); 
 }
 
 /* Filters */
@@ -137,7 +152,7 @@ a {
     color: var(--text-color);
     border: 1px solid var(--border-color);
     padding: 5px 15px;
-    font-size: 0.65em;
+    font-size: 0.75em;
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.2s;
@@ -186,7 +201,7 @@ a {
 .project-item.active {
     background: var(--accent-color);
     /* color: var(--bg-color); */
-    font-weight: bold;
+    font-family: neueMontreal-Bold, var(--font-display);
 }
 
 /* Middle Column (Images) */
@@ -299,12 +314,197 @@ a {
     line-height: 1.3;
 }
 
-/* Footer */
-.site-footer {
+/* Writing View */
+.writing-container {
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    align-items: start;
+}
+
+.writing-main {
+    padding: 20px;
+    padding-bottom: 10vh;
+    columns: 2;
+    column-gap: 20px;
+}
+
+.writing-entry {
+    padding: 0 0 1.85em 0;
+    break-inside: avoid;
+}
+
+.writing-section-heading {
+    font-family: NeueMontreal-Bold, var(--font-display);
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 2em 0 0.75em 0;
+    border-top: 1px solid var(--border-color);
+    column-span: all;
+}
+
+.writing-section-heading:first-child {
+    padding-top: 0;
+    border-top: none;
+}
+
+.writing-entry-header {
     display: flex;
     justify-content: space-between;
-    padding: 15px 40px;
-    border-top: 1px solid var(--border-color);
+    align-items: baseline;
+    margin-bottom: 0.75em;
+    gap: 1em;
+}
+
+.writing-entry-title {
+    font-family: var(--font-main);
+    font-size: 0.85em;
+    text-transform: uppercase;
+}
+
+.writing-entry-year {
+    font-family: var(--font-main);
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.writing-entry-desc {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text-color);
+    margin-bottom: 1em;
+}
+
+.writing-link {
+    font-size: 0.85rem;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.writing-link:hover {
+    color: var(--accent-color);
+}
+
+.writing-empty {
+    font-size: 0.85rem;
+    color: #888;
+    padding: 2em 0;
+}
+
+/* -------- About Section ---------- */
+.about-container {
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    align-items: start;
+}
+
+.about-bio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 2em;
+}
+
+.about-bio p {
+    margin-bottom: 1em;
+}
+
+.about-heading {
+    font-family: var(--font-display);
+    font-size: 0.85em;
+    margin-bottom: 1em;
+    column-span: all;
+}
+
+.about-contact {
+    padding: 1em 0.9em 1em 0;
+}
+
+.about-subheading {
+    font-family: var(--font-display);
+    font-size: 0.85em;
+    text-transform: uppercase;
+    margin-bottom: 0.75em;
+}
+
+.about-contact p {
+    font-size: 0.85em;
+    margin-bottom: 0.5em;
+}
+
+.about-contact a {
+    text-decoration: underline;
+}
+
+.about-photo {
+    width: 60%;
+    height: auto;
+    display: block;
+    /* margin-right: 1.2em; */
+    margin-bottom: 1em;
+    /* break-inside: avoid; */
+}
+
+.bio-content {
+    padding-right: 3em;
+}
+
+.bio-text {
+    font-size: 0.90em;
+    color: var(--text-color);
+    margin-bottom: 1em;
+}
+
+.cv-heading {
+    font-family: var(--font-display);
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.cv-section {
+    font-family: neueMontreal-Medium, var(--font-display);
+    font-size: 0.85em;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+
+.cv-item {
+    font-size: 0.85em;
+    margin-bottom: 0.25em;
+}
+
+.cv-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1em; /* Spacing between each CV entry */
+    margin-bottom: 2em;
+}
+
+.cv-item {
+    display: grid;
+    grid-template-columns: 100px 1fr; 
+    gap: 1em;
+    align-items: baseline; 
+    font-size: 0.85em;
+    line-height: 1.4;
+}
+
+.cv-year {
+    font-family: var(--font-main);
+}
+
+.cv-details b {
+    font-weight: normal;
+    font-family: 'neueMontreal-Medium', var(--font-display);
+}
+
+/* Footer */
+.site-footer {
+    display: grid;
+    grid-template-columns: 250px 1fr 300px; 
+    align-items: center;
+    padding: 2em 0 0.5em 1.875em;
     font-size: 0.75rem;
     text-transform: uppercase;
     color: #888;

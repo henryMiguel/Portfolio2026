@@ -20,7 +20,7 @@
     "year": 2024,
     "categories": ["IDENTITY", "DESIGN"],
     "description": "Chalet is a staple in Chicago's North Shore for home and garden needs since 1917. As it heads into the future, Chalet aimed for a revitalized brand concept, slogan, and visual style. ",
-    "link": "#",
+    "link": "https://chaletnursery.com/",
     "team": "Kyle Reading,Group Creative Director<br>Rose Truesdale, Associate Creative Director<br>Mia Hopkins, Senior Art Director<br>Anatoly Sazonov, Illustrator<br>Emily Resch, Motion Designer",
     "layout":"grid",
     "images": [
@@ -160,6 +160,7 @@
       "year": 2026,
       "categories": ["IDENTITY","WEB"],
       "description": "Website design for Poetics of Computational Design 2026, an event exploring the cultural, critical, and poetic dimensions of computation in art and design. The site reimagines conventional web design through principles drawn from blackout poetry, introducing friction and alternative modes of navigation and visualization.",
+      "team": "Ana Coelho,<br> André Rangel,<br> Bruno Giesteira,<br> Camila Mangueira,<br> Catarina Rocha,<br> Eduardo Morais,<br> Eliana Penedos-Santiago,<br> Fabrício Fava,<br> Lara Portelinha,<br> Mariana Ferreira,<br> Miguel Carvalhais,<br> Pedro Cardoso,<br> Rodrigo Carvalho",
       "link": "https://pcd.fba.up.pt/2026/",
       "images": [
       "images/pcd-26/pcd-01.png",
@@ -178,6 +179,89 @@
         "images/conceptSeries/twigs-01.png",
         "images/conceptSeries/fov-02.png",
         "images/conceptSeries/uneedto-01.png"
+      ]
+    },
+
+    {
+      "id": "project13",
+      "title": "From Optical to Invisual, Graphic Design in the Age of Platform Seeing",
+      "year": 2026,
+      "categories": ["WRITING"],
+      "writingType": "Article",
+      "description": "Platforms and algorithmic vision are transforming graphic design into machine-readable systems. This essay explores the implications of this shift, examining how the field of design is being changed by pervasive algorithmic interpretation in the creation of visual communication.<br><br> Published on Critical Playground, a platform for critical writing and research in design, visual culture and technology.",
+      "link": "https://criticalplayground.org/from-optical-to-invisual-graphic-design-in-the-age-of-platform-seeing/",
+      "images": ["images/writing/CP-01.png"]
+    },
+
+    {
+      "id": "project14",
+      "title": "Companionship Mechanics in AI-Driven Character Platforms",
+      "year": 2026,
+      "categories": ["WRITING"],
+      "writingType": "Conference Paper",
+      "description": "This paper examines how conversational AI companion platforms such as Character.ai structure user engagement through highly customizable interaction systems that reinforce flow and addiction-oriented behaviors. Extended abstracts published on the book of abstracts of the Symposium On Interaction and Computational Media Design (pg.72—79).",
+      "link": "https://frictiondesign.fba.up.pt/unloop/unloop2026.pdf",
+      "images": ["images/writing/boa.png"]
+    },
+
+    {
+      "id": "project15",
+      "title": "Collision-Based Design: A New Analog for the Digital Canvas",
+      "year": 2026,
+      "categories": ["WRITING"],
+      "writingType": "Blog Post",
+      "description": "On the beauty of mis-detection, punctuation and design as abstraction.",
+      "link": "https://whollyother1.substack.com/p/collision-based-design-a-new-analog",
+      "images": ["images/writing/boa.png"]
+    },
+
+    {
+      "id": "project16",
+      "title": "2025 Musical Retrospective, “Silly-ware,” & Digital Design",
+      "year": 2025,
+      "categories": ["WRITING"],
+      "writingType": "Blog Post",
+      "description": "How a search for an album chart tool led me to Gregorian chants and the end of manual design.",
+      "link": "https://whollyother1.substack.com/p/2025-musical-retrospective-silly",
+      "images": ["images/writing/CP-02.png"]
+    },
+
+    {
+      "id": "project17",
+      "title": "From Games to Interfaces: An Archive of Friction Approaches for Interaction Design.",
+      "year": 2026,
+      "categories": ["WRITING"],
+      "writingType": "Conference Paper",
+      "description": "Henrique Miguel, Fabrício Fava, ​​Pedro Cardoso, Eliana Santiago and Miguel Carvalhais. 2026. “From Games to Interfaces: An Archive of Friction Approaches for Interaction Design.” Intermediartes: International Conference on Media, Arts and Interaction, Vila do Conde. "
+    },
+
+    {
+      "id": "project18",
+      "title": "Friction Design Archive: An Online Collection",
+      "year": 2026,
+      "categories": ["WRITING"],
+      "writingType": "Conference Paper",
+      "description": "​​Pedro Cardoso, Miguel Carvalhais, Eliana Santiago, Fabrício Fava and Henrique Miguel. 2026. “Friction Design Archive: An Online Collection.”Breaking the Code: Hacktivating Non-Normative Algorithms, Porto, Portugal."
+    },
+
+    {
+      "id": "project19",
+      "title": "An Open Access Database of Friction Design Patterns.",
+      "year": 2026,
+      "categories": ["WRITING"],
+      "writingType": "Conference Paper",
+      "description": "Henrique Miguel, Fabrício Fava, Pedro Cardoso, Eliana Santiago and Miguel Carvalhais. 2026. “An Open Access Database of Friction Design Patterns.” Space to Space: 1st International Conference on Design, Animation & Media, Faro, Portugal."
+    },
+
+    {
+      "id": "project20",
+      "title": "Cyberperfect",
+      "year": 2025,
+      "categories": ["DESIGN"],
+      "description": "A speculative design project exploring the implications of AI-generated content in digital spaces.",
+      "images": [
+      "images/cyberperfect/cb-pages.gif",
+      "images/cyberperfect/cyberPerfect-comps-v02.png"
       ]
     }
 
