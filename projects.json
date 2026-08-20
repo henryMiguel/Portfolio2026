@@ -70,7 +70,7 @@
     "year": 2023,
     "categories": ["DESIGN"],
     "description": "Merchandise concept for Workiva, translating the global brand into a cohesive range of apparel, accessories, and event items. The system balanced recognisable brand elements with a more expressive visual language suited to physical products.",
-    "team": "Various",
+    "team": "Kyle Reading,Group Creative Director<br>Rose Truesdale, Associate Creative Director<br>Mia Hopkins, Senior Art Director<br>Miriam Brack, Senior Graphic Designer<br>Emily Resch, Motion Designer",
     "layout": "grid",
     "images": [
       "images/workiva/wk00000.png",
@@ -140,7 +140,8 @@
       "categories": ["MOTION"],
       "description": "Created 45 minutes of live visuals for Dominic Voz’s 2022 album debut at Cafe Mustache, followed by a 22-minute performance at Grace Episcopal Church as part of the Drone Rodeo event series. The visuals responded to Voz’s glitchy, distorted sounds and serene melodies through mixed-media techniques including stop-motion and live video recursion.",
       "layout": "grid",
-      "images": ["youtube:cFOJzJ-NOJY"]
+      "team": "Cameron Guthrie<br>Grant Nikseresht<br>Tim Curley",
+      "images": ["youtube:cFOJzJ-NOJY", "youtube:ig9uA80KKyg"]
     },
 
     {
@@ -173,7 +174,7 @@
       "title": "Concept Series",
       "year": 2024,
       "categories": ["DESIGN"],
-      "description": "A series of posters and print materials that visualize poems, essays, and theoretical readings—serving as a sandbox for alternative typographic treatments and experimental layouts.",
+      "description": "A series of posters and print materials that visualize poems, essays, and theoretical readings—serving as a sandbox for alternative typographic treatments and layouts.",
       "images": [
         "images/conceptSeries/workIsTime_02.png",
         "images/conceptSeries/twigs-01.png",
@@ -263,6 +264,16 @@
       "images/cyberperfect/cb-pages.gif",
       "images/cyberperfect/cyberPerfect-comps-v02.png"
       ]
+    },
+
+    {
+      "id": "project21",
+      "title": "The Weather Inside the Machine",
+      "year": 2026,
+      "categories": ["MOTION"],
+      "description": "The Weather Inside the Machine is a short film about the visual debris that permeates today's media environment. By recontextualizing moving images sourced from Wikimedia Commons, the project reflects on what remains of visual meaning-making in an age of mass image production and circulation.",
+      "images": 
+        ["youtube:nVxMhRodEsc"]
     }
 
 ]
